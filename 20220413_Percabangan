@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    
+    int nilai;
+    string keterangan;
+    cout<<"Masuka Nilai = ";cin>>nilai;
+    
+   if (nilai > 100 || nilai < 0)
+   keterangan = "diluar jangkauan";
+}
+Else if nilai (nilai>=90) {
+    keterangan ="sangat memuaskan";
+}
+Else if nilai (nilai>=80){
+    keterangan ="Memuaskan";
+}
+/*
+    Else if nilai (nilai>=75){
+      keterangan ="Cukup";
+}
+*/
+Else {
+    Cout<<"Tidak Lulus";
+}
+
+return 0;
+    
+    
+    
