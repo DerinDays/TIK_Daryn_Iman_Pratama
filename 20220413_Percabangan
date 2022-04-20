@@ -7,7 +7,7 @@ int main()
     
     int nilai;
     string keterangan;
-    cout<<"Masuka Nilai = ";cin>>nilai;
+    cout<<"Masukan Nilai = ";cin>>nilai;
     
    if (nilai > 100 || nilai < 0)
    keterangan = "diluar jangkauan";
