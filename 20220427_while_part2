@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+int main(){
+    
+    //menambahkan atas bawah
+    //menambahkan bawah atas
+    //namun batas bawah tidak boleh lebih dari batas atas
+    int batasbawah, batasatas;
+    cout<<"Masukkan Batas Bawah = ";cin>>batasbawah;
+    cout<<"Masukkan Batas Atas = ";cin>>batasatas;
+    while (batasbawah++ <batasatas){
+        cout<<"Data ke -"<<batasbawah<<endl;
+        
+    if (batasatas < batasbawah){
+         cout<<"Batasbawah tidak boleh lebih dari batasatas";
+    }
+    
+    return 0;
+    }
