@@ -1,0 +1,51 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+ 
+  string satuan [] = { "km","hm","dam","m","dm","cm","mm"};
+  string awal,akhir;
+  int x,y,nilai;
+  float angka,hasil;
+  int a = sizeof (satuan) / sizeof (*satuan);
+  
+  cout << "angka yang ingin dikonversi : ";
+  cin >> angka;
+  
+  cout << "awal konversi : ";
+  cin >> awal;
+  
+  cout << "akhir konversi : ";
+  cin >> akhir;
+  
+  for (int d = 0;d < a; d++){
+      if (awal == satuan [d]){
+          x = d + 1 ;
+      }
+      if (akhir == satuan [d]){
+          y = d + 1;
+      } 
+  }
+  
+  hasil = angka;
+  
+  if (x < y){
+      int z = y - x;
+      for (int p = 0; p < z; p++){
+          hasil *= 10;
+      }
+  }
+  else if (x > y){
+      int z = x - y;
+      for (int p = 0; p < z; p++){
+          hasil /= 10;
+      }
+  }
+  else {
+      hasil = nilai;
+  }
+  
+  cout << angka << " " << awal <<" " << "=" << " " << hasil << " " << akhir; 
+  
+  return 0;
+}
